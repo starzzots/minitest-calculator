@@ -6,4 +6,8 @@ class TestCalculator < Minitest::Test #class TestCalculator < Minitest::Test: We
     calculator = Calculator.new
     assert_equal 4, calculator.add(2, 2), "Addition method failed" #assert_equal 4, calculator.add(2, 2): The assertion. We’re checking if the add method returns 4 when given 2 and 2.
   end
+  def test_subtraction
+    calculator = Calculator.new
+    assert_equal 0, calculator.subtract(2, 2), "Subtraction method failed"
+  end
 end
